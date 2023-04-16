@@ -39,4 +39,10 @@ class BitriseTestUITests: XCTestCase {
             }
         }
     }
+    
+     func testDemoFail() {
+       let forceFailText = "GoodBye, world!"
+       let expectedText = "Hello, world!"
+       XCTAssertEqual(forceFailText, expectedText)
+     }
 }
